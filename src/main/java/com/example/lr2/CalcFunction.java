@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.text.DecimalFormat;
 
 public class CalcFunction {
-    private static double a = 0.5;
+    private static double a = -0.5;
     private static double b = 2;
 
     double[] xValues;

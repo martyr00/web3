@@ -12,7 +12,6 @@ public class CalcFunctionTest {
 
     @BeforeEach
     public void setUp() {
-        // Инициализация объекта CalcFunction с диапазоном от 0.5 до 2 с шагом 0.1
         calcFunction = new CalcFunction(0.0, 3.0, 0.004);
     }
 
@@ -20,7 +19,7 @@ public class CalcFunctionTest {
     public void testFunctionForXGreaterThan1_4() {
         // Проверка для x > 1.4
         double x = 1.5;
-        double expected = Math.exp(0.5 * x) * Math.cos(2 * x);
+        double expected = Math.exp(-0.5 * x) * Math.cos(2 * x);
         assertEquals(expected, calcFunction.f(x), 1e-9);
     }
 
@@ -28,7 +27,7 @@ public class CalcFunctionTest {
     public void testFunctionForXBetween0_7And1_4() {
         // Проверка для 0.7 < x <= 1.4
         double x = 1.0;
-        double expected = 0.5 * Math.pow(x, 2) * Math.log(x);
+        double expected = -0.5 * Math.pow(x, 2) * Math.log(x);
         assertEquals(expected, calcFunction.f(x), 1e-9);
     }
 
