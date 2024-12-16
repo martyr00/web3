@@ -79,9 +79,7 @@ public class CalcFunctionTest {
 
     @Test
     public void testPrintForTest() {
-        // Простой тест для проверки метода вывода на экран
         calcFunction.print_for_test();
-        // Этот тест не проверяет логики, но может быть полезен для отладки
     }
 
 }
