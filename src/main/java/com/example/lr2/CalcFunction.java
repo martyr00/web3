@@ -82,7 +82,7 @@ public class CalcFunction {
         return getSum() / yValues.length;
     }
 
-    // Метод для вывода данных (можно использовать для тестирования)
+    // Метод для вывода данных
     public void print_for_test() {
         System.out.println("i\tx \t\ty");
         for (int i = 0; i < xValues.length; i++) {
