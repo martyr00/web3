@@ -37,8 +37,8 @@ public class CalcFunction {
         xValues = new double[n];
         yValues = new double[n];
 
-        // Используем DecimalFormat для точного форматирования чисел
-        DecimalFormat df = new DecimalFormat("#.#########"); // 9 знаков после запятой
+
+        DecimalFormat df = new DecimalFormat("#.#########");
 
         int maxLength = Math.max(String.valueOf(start).length(), Math.max(String.valueOf(end).length(), String.valueOf(step).length()));
         int scale = (int) Math.pow(10, maxLength - 1);
@@ -47,7 +47,6 @@ public class CalcFunction {
             int b = (int) ((start + i * step) * scale);
             xValues[i] = (double) b / scale;
 
-            // Форматируем значение и заменяем запятую на точку перед парсингом
             String formattedValue = df.format(f(xValues[i])).replace(",", ".");
             yValues[i] = Double.parseDouble(formattedValue);
         }
