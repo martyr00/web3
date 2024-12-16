@@ -28,7 +28,7 @@
       width: 200px;
       background-color: #444;
       color: white;
-      border: 1px solid #fff; /* Белая граница */
+      border: 1px solid #fff;
     }
 
     input[type="submit"] {
